@@ -24,11 +24,16 @@ pipeline {
                 
               //  bat 'git push origin "refs/remotes/origin1/*:refs/heads/*"'
                 
-              
+               echo "end if the world"
+                 echo "end if the world"
+                 echo "end if the world"
+                 echo "end if the world"
+                 echo "end if the world"
               //  bat 'git fetch origin'
              //   bat 'git checkout origin/master'
              //   bat 'git fetch origin'
-                bat 'git merge remote.origin1/master'
+                bat 'git checkout remote.origin1/master'
+                bat 'git merge remote.origin/master'
                 bat 'git push remote.origin1 master'
                 echo "end if the world"
             }
