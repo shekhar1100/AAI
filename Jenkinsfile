@@ -34,7 +34,7 @@ pipeline {
             //    bat 'git fetch origin1'
               //  bat 'git checkout origin1/master'
                 bat 'git merge origin/master'
-                //bat 'git push origin1 master'
+                bat 'git push origin1 master'
                 //echo "end if the world"
             }
         }
