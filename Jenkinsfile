@@ -29,13 +29,26 @@ pipeline {
                  echo "end if the world"
                  echo "end if the world"
                  echo "end if the world"
-                bat 'git fetch origin1'
-                bat 'git checkout origin1/master'
+               // bat 'git fetch origin1'
+             //   bat 'git checkout origin1/master'
             //    bat 'git fetch origin1'
               //  bat 'git checkout origin1/master'
-                bat 'git merge origin/master'
-                bat 'git push origin1 master'
+              //  bat 'git merge origin/master'
+              //  bat 'git push origin1 master'
                 //echo "end if the world"
+                
+                //add a remote repository
+            bat 'git remote add --mirror=fetch second https://github.com/shekhar1100/LetME.git'
+            // update the local copy from the first repository
+            bat 'git fetch origin --tags'
+
+            // update the local copy with the second repository
+            bat 'git fetch second --tags'
+
+            // sync back the second repository
+            bat 'git push second --all'
+            bat 'git push second --tags'
+                
             }
         }
     }
