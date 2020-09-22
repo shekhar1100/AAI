@@ -29,11 +29,11 @@ pipeline {
                  echo "end if the world"
                  echo "end if the world"
                  echo "end if the world"
-              //  bat 'git fetch origin'
-             //   bat 'git checkout origin/master'
+                bat 'git fetch origin'
+                bat 'git checkout origin/master'
             //    bat 'git fetch origin1'
               //  bat 'git checkout origin1/master'
-                //bat 'git merge origin/master'
+                bat 'git merge origin1/master'
                 //bat 'git push origin1 master'
                 //echo "end if the world"
             }
