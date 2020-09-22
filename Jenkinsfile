@@ -38,16 +38,16 @@ pipeline {
                 //echo "end if the world"
                 
                 //add a remote repository
-            bat 'git remote add --mirror=fetch second git@github.com:shekhar1100/LetME.git'
+            bat 'git remote add --mirror=fetch second1 git@github.com:shekhar1100/LetME.git'
             // update the local copy from the first repository
             bat 'git fetch origin --tags'
 
             // update the local copy with the second repository
-            bat 'git fetch second --tags'
+            bat 'git fetch second1 --tags'
 
             // sync back the second repository
-            bat 'git push second --all'
-            bat 'git push second --tags'
+            bat 'git push second1 --all'
+            bat 'git push second1 --tags'
                 
             }
         }
